@@ -10,6 +10,11 @@ export default function Page() {
           {id}
         </Link>
       ))}
+      <Link href="/redirectToModal">
+        <strong>Open console and terminal and click me</strong>
+        <br />
+        Link to a page that redirects you to an intercepted page
+      </Link>
     </section>
   );
 }

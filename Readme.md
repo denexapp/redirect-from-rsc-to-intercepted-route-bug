@@ -1,14 +1,18 @@
-# NextGram
+# Bug demo: calling redirect from an React Server Component to an intercepted route causes infinite rerendering loop
 
-This is a sample Next.js application that takes advantage of the advanced routing capabilities.
+## How to play this demo
 
-The photo route can be attached to _two distinct_ components:
+1. Clone the repo / Open codespaces
+2. npm install
+3. npm run dev
+4. Click the link on the main page
+5. Watch the browser console or the terminal: the component that renders the intercepted route will be stuck in the rerendering loop
 
-1. When navigating within the application, it is rendered as a modal
-1. When the page is refreshed, it is rendered as a standalone page
+## Environment
 
-## Demo
-
-https://nextgram.vercel.app
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnextgram)
+Tested:
+- with babel / without babel
+- on mac os / on github codespaces
+- with turbopack / without turbopack
+- on canary / on stable
+- with bun / with node
